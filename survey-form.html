@@ -11,25 +11,25 @@
       @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     </style>
     <header>
-      <h1>Design your dream workspace </h1>
-      <p> Tell us what your ideal workspace looks and feels like!</p>
+      <h1 id="title">Design your dream workspace </h1>
+      <p id="description"> Tell us what your ideal workspace looks and feels like!</p>
     </header>
 
-    <form>
+    <form id="survey-form">
       <div class="form-que">
         <div class="text">
-          <label>Name</label><br/>
-          <input type="text" name="name" placeholder="Enter Your Name" required>
+          <label id="name-label">Name</label><br/>
+          <input id="name" type="text" name="name" placeholder="Enter Your Name" required>
         </div><br/>
 
         <div class="text">
-          <label>Email</label><br/>
-          <input type="email" name="email" placeholder="Enter Your Email Address" required>
+          <label id="email-label">Email</label><br/>
+          <input id="email" type="email" name="email" placeholder="Enter Your Email Address" required>
         </div><br/>
 
         <div class="text">
-          <label>Age</label><br/>
-          <input type="number" name="age" placeholder="Enter Your Age" min="0" max="60" required>
+          <label id="number-label">Age</label><br/>
+          <input id="number" type="number" name="age" placeholder="Enter Your Age" min="0" max="60" required>
         </div><br/>
 
         <div>
@@ -94,7 +94,7 @@
           <textarea id="textarea" name="describe" required>Enter here..</textarea>
       </div>
       <div class="sub-btn">
-          <button>Submit</button>
+          <button id="submit" type="submit">Submit</button>
       </div>
     </form>
   </body>

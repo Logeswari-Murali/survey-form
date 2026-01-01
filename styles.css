@@ -1,24 +1,24 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 body{
-    margin: 5rem 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: 'Poppins', sans-serif;
-    background-image: 
-    linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.5)),
-    url("https://i.pinimg.com/1200x/a2/93/65/a293650477514472f7999ffca3c71235.jpg");
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.5)), url(https://i.pinimg.com/1200x/a2/93/65/a293650477514472f7999ffca3c71235.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    justify-items: center;
-    align-content: center;
-    color: white;
-    
+    color: white;   
 }
 
 h1{
+    margin: auto;
+    padding: 1em 0 0.3em;
+    align-items: top;
     text-align: center;
     margin: 0;
     font-weight: 700;
@@ -27,18 +27,28 @@ h1{
 p{
     font-size: large;
     text-align: center;
-    margin: 0.5em 2em 2em;
+    margin: auto;
+    padding: 0 1em 0.5em;
     font-weight: 500;
+}
+
+main{
+    margin: auto;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;  
+    align-items: center;
 }
 
 .form-que{
     background-color: rgba(34, 34, 34, 0.8);
     border-radius: 0.25rem;
-    margin: 5rem 5rem;
+    margin: auto;
     padding: 1.5rem;
     width: 70%;
     min-width: 200px;
-    justify-content: center;
+    align-content: center;
 }
 
 div{
@@ -111,6 +121,7 @@ textarea{
 }
 
 .sub-btn{
+    margin: 3em;
     display: flex;
     justify-content: center;  
     align-items: center;                  
@@ -119,7 +130,7 @@ textarea{
 button {
   background-color: rgba(34, 34, 34, 0.8);
   color: white;
-  width: 50%;
+  width: 100%;
   border:none;
   padding: 1em 1.5em;
   border-radius: 0.25em;
